@@ -5,11 +5,11 @@ require "kickstarter-monitor/version"
 Gem::Specification.new do |s|
   s.name        = "kickstarter-monitor"
   s.version     = Kickstarter::Monitor::VERSION
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Daniel Tralamazza"]
+  s.email       = ["tralamazza@gmail.com"]
+  s.homepage    = "https://github.com/tralamazza/kickstarter-monitor"
+  s.summary     = %q{A simple mongodb powered kickstarter.com scraper}
+  s.description = %q{This gem collects kickstarter projects and fills a mongodb collection}
 
   s.rubyforge_project = "kickstarter-monitor"
 
@@ -21,4 +21,7 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "bson_ext"
+  s.add_runtime_dependency "mongo"
+  s.add_runtime_dependency "kickstarter"
 end
