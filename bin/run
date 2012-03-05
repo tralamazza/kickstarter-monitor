@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "kickstarter-monitor"
+
+serv = Kickstarter::Monitor::Service.new
+serv.execute
